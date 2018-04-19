@@ -38,6 +38,14 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
+
+            }
+        });
+        //cuando se toque en el textview haceuna accion
+        holder.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
