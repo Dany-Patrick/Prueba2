@@ -1,5 +1,6 @@
 package cl.dany.prueba2.views.main.details;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 
 import cl.dany.prueba2.R;
 import cl.dany.prueba2.models.Place;
+import cl.dany.prueba2.views.main.MainActivity;
 
 public class DetailsActivity extends AppCompatActivity {
     //se crrea la variable constrante que irá a otro activity
@@ -86,5 +88,13 @@ public class DetailsActivity extends AppCompatActivity {
         place.save();
 
 
+    }
+
+    //cuando aprete retroceder hace un intent sl mainActivity
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        Intent intent= new Intent(DetailsActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -64,5 +64,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+// al apretar retroceder el mainactivity  recibe el intent del detailActivity cierra
+// el activity con el finish() y vuelve a iniciar el activity del main con activity
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        finish();
+        startActivity(getIntent());
+    }
 }
