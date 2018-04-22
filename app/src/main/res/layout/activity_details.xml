@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.main.details.DetailsActivity">
+    <EditText
+        android:background="@drawable/bg_white_underline_black"
+        android:id="@+id/placeDetailTv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="9"
+        android:hint="Descripcion"/>
+    <RatingBar
+        android:numStars="5"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/placeDetailTv"
+        android:layout_centerInParent="true"
+        android:id="@+id/starDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/starSelectionDetail"
+        android:layout_below="@id/starDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/itemTextRanking"
+        android:textSize="21dp"
+        android:layout_centerInParent="true"
+
+        android:layout_below="@id/starSelectionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

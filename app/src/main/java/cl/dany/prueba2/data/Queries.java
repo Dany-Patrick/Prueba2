@@ -11,7 +11,7 @@ public class Queries {
         //se crea una variable List tipo Array
         List<Place> places = new ArrayList<>();
         //se incializa con todos los datos de Place usando el listAll(Place.class)
-        List<Place> placeList = Place.listAll(Place.class);
+        List<Place> placeList = Place.find(Place.class,"visited = 0");
         //se valida que no esté en cero
         if(placeList != null && placeList.size() > 0)
         {

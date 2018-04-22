@@ -5,7 +5,7 @@ import com.orm.SugarRecord;
 public class Place extends SugarRecord {
 
     private String name,description;
-    private int ranking;
+    private float ranking;
     private boolean visited;
 
     public Place(String name, String description, int ranking, boolean visited) {
@@ -34,11 +34,11 @@ public class Place extends SugarRecord {
         this.description = description;
     }
 
-    public int getRanking() {
+    public float getRanking() {
         return ranking;
     }
 
-    public void setRanking(int ranking) {
+    public void setRanking(float ranking) {
         this.ranking = ranking;
     }
 
